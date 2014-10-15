@@ -1535,6 +1535,7 @@ void ip_send_unicast_reply(struct net *net, struct sk_buff *skb, __be32 daddr,
 	}
 
 	put_cpu_var(unicast_sock);
+out:
 
 	ip_rt_put(rt);
 }
