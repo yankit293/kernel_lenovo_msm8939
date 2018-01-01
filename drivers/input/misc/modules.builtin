@@ -1,0 +1,7 @@
+kernel/drivers/input/misc/hbtp_input.ko
+kernel/drivers/input/misc/hbtp_vm.ko
+kernel/drivers/input/misc/uinput.ko
+kernel/drivers/input/misc/mpu6050.ko
+kernel/drivers/input/misc/akm09911.ko
+kernel/drivers/input/misc/epl259x.ko
+kernel/drivers/input/misc/st480.ko

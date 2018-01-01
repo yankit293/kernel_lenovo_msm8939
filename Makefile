@@ -192,8 +192,8 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # "make" in the configured kernel build directory always uses that.
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
-ARCH		?= $(SUBARCH)
-CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
+ARCH		?= arm64
+CROSS_COMPILE	?= /home/yankit293/aarch64-linux-android-4.9/bin/aarch64-linaro-linux-android-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -620,9 +620,6 @@ KBUILD_CFLAGS += $(stackp-flag)
 # This warning generated too much noise in a regular build.
 # Use make W=1 to enable this warning (see scripts/Makefile.build)
 KBUILD_CFLAGS += $(call cc-disable-warning, unused-but-set-variable)
-
-# transport MTK_CDEFS ( mtk compile macros ) to .c for compile 
-KBUILD_CFLAGS += $(MTK_CDEFS)
 
 ifdef CONFIG_FRAME_POINTER
 KBUILD_CFLAGS	+= -fno-omit-frame-pointer -fno-optimize-sibling-calls

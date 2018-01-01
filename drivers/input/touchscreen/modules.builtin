@@ -1,0 +1,7 @@
+kernel/drivers/input/touchscreen/gen_vkeys.ko
+kernel/drivers/input/touchscreen/ft5x06_ts.ko
+kernel/drivers/input/touchscreen/gt9xx/gt9xx.ko
+kernel/drivers/input/touchscreen/gt9xx/gt9xx_extents.ko
+kernel/drivers/input/touchscreen/gt9xx/gt9xx_update.ko
+kernel/drivers/input/touchscreen/gt9xx/goodix_tool.ko
+kernel/drivers/input/touchscreen/gt9xx/gt9xx_openshort.ko
